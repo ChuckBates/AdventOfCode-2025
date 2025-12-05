@@ -9,7 +9,8 @@
         "src/day01.nim",
         "src/day02.nim",
         "src/day03.nim",
-        "src/day04.nim"
+        "src/day04.nim",
+        "src/day05.nim"
       ]
     }
   ],
@@ -17,7 +18,7 @@
     {
       "label": "build/run selected day",
       "type": "shell",
-      "command": "nim c -r --forceBuild --cc:clang -g --lineDir:on --passC:-O0 --passC:-fno-omit-frame-pointer -o:bin/aoc_day ${input:dayFile}",
+      "command": "nim c -r --forceBuild --cc:clang -g -d:release --lineDir:on --passC:-O0 --passC:-fno-omit-frame-pointer -o:bin/aoc_day ${input:dayFile}",
       "problemMatcher": []
     },
     {
