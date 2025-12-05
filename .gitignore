@@ -1,0 +1,26 @@
+# Nim cache directory
+nimcache/
+
+# All built artifacts go here
+/bin/
+
+# Compiled binaries / libs (in case anything ends up outside bin)
+*.exe
+*.out
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Debug symbols / maps
+*.pdb
+*.ilk
+*.dSYM/
+*.map
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db

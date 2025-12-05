@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "dayFile",
+      "type": "pickString",
+      "description": "Pick a day to build/debug",
+      "options": [
+        "src/day01.nim",
+        "src/day02.nim",
+        "src/day03.nim",
+        "src/day04.nim"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "label": "build/run selected day",
+      "type": "shell",
+      "command": "nim c -r --forceBuild --cc:clang -g --lineDir:on --passC:-O0 --passC:-fno-omit-frame-pointer -o:bin/aoc_day ${input:dayFile}",
+      "problemMatcher": []
+    },
+    {
+      "label": "build selected day (JS debug)",
+      "type": "shell",
+      "command": "nim js --forceBuild -g --sourcemap:on --debugger:native --lineTrace:on --stackTrace:on -o:bin/aoc_day.js ${input:dayFile}",
+      "problemMatcher": []
+    }
+  ]
+}

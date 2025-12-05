@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug AoC day (Nim JS)",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/aoc_day.js",
+      "cwd": "${workspaceFolder}",
+      "args": [],          // put ["--test"] when you want test input
+      "console": "integratedTerminal",
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/bin/**/*.js"],
+      "preLaunchTask": "build selected day (JS debug)"
+    }
+  ]
+}
