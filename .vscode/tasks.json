@@ -10,7 +10,8 @@
         "src/day02.nim",
         "src/day03.nim",
         "src/day04.nim",
-        "src/day05.nim"
+        "src/day05.nim",
+        "src/day06.nim"
       ]
     }
   ],
