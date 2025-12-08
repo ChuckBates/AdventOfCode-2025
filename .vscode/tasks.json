@@ -11,7 +11,8 @@
         "src/day03.nim",
         "src/day04.nim",
         "src/day05.nim",
-        "src/day06.nim"
+        "src/day06.nim",
+        "src/day07.nim"
       ]
     }
   ],
